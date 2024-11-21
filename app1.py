@@ -42,7 +42,8 @@ def search_and_process(query):
 def generate_response(content, query):
     """Generate a response using LangChain."""
     memory = ConversationBufferMemory()
-    llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7)
+    llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7,openai_api_key="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")
+
 
     prompt_template = PromptTemplate(
         input_variables=["content", "query"],
