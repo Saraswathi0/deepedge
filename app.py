@@ -11,8 +11,6 @@ import requests as r
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 
-OPENAI_API_KEY="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"
-
 import requests
 from bs4 import BeautifulSoup
 from langchain import PromptTemplate, LLMChain
