@@ -17,12 +17,11 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-SERP_API_KEY="5e915515d9acb05403f1432fceeeeb9fa90def5082017e6d1783ff02f8e35f84"
-
 def search_and_process(query):
     """Search the web using SerpAPI and process the results."""
     # Use SerpAPI for a more reliable Google search
-    SERP_API_KEY = os.getenv("SERP_API_KEY")
+    SERP_API_KEY ="5e915515d9acb05403f1432fceeeeb9fa90def5082017e6d1783ff02f8e35f84"
+
     if not SERP_API_KEY:
         raise Exception("Missing SerpAPI key in environment variables.")
 
