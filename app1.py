@@ -7,7 +7,7 @@ import streamlit as st
 
 # Directly assigning API keys as variables
 SERP_API_KEY = "5e915515d9acb05403f1432fceeeeb9fa90def5082017e6d1783ff02f8e35f84"
-OPENAI_API_KEY ="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"
+OPENAI_API_KEY ="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"
 def search_and_process(query):
     """Search the web using SerpAPI and process the results."""
     api_url = "https://serpapi.com/search"
