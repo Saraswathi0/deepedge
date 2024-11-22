@@ -1,4 +1,27 @@
+# Basic dependencies
 beautifulsoup4==4.11.2
 requests==2.28.2
 python-dotenv==1.0.0
+
+# Transformers and tokenizers
 transformers==4.29.2
+# Specify tokenizers as a prebuilt wheel version to avoid Rust compiler issues
+tokenizers==0.13.3
+
+# Additional dependencies for compatibility
+soupsieve>1.2
+charset-normalizer<4,>=2
+idna<4,>=2.5
+urllib3<1.27,>=1.21.1
+certifi>=2017.4.17
+
+# Other dependencies used by transformers
+filelock>=3.16.1
+huggingface-hub<1.0,>=0.14.1
+numpy>=1.17
+packaging>=20.0
+pyyaml>=5.1
+regex!=2019.12.17
+tqdm>=4.27
+fsspec>=2023.5.0
+typing-extensions>=3.7.4.3
